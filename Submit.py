@@ -17,7 +17,7 @@ class Submit(Tk):
 
     def submit(self):
         message = self.entry_1.get()
-        if message is None:
+        if len(message) == 0:
             message = "Update"
         os.system("git add .")
         os.system("git commit -a -m \"{}\" ".format(message))
