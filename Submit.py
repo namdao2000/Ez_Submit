@@ -20,7 +20,7 @@ class Submit(Tk):
         if len(message) == 0:
             message = "Update"
         os.system("git add .")
-        os.system("git commit -a -m \"{}\" ".format(message))
+        os.system("git commit -m \"{}\" ".format(message))
         os.system("git push")
 
 
